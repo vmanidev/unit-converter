@@ -1,32 +1,36 @@
 # Unit Converter App
 
-A sleek and minimalistic unit converter app for quick, effortless, and accurate conversions. 
+A sleek and minimalistic unit converter app for quick, effortless, and accurate conversions.
 
 ## Features
 
 ✅ **Minimal & Eye-Catching UI** – A sleek, intuitive design for effortless conversions.  
 ✅ **Essential & Advanced Conversions** – Convert length, weight, temperature, speed, and more.  
-✅ **Fast & Accurate** – Get instant, precise results with a smooth user experience. 
+✅ **Fast & Accurate** – Get instant, precise results with a smooth user experience.
 
-## Demo 
+## Demo
 
-[Live Demo](https://unit-converter-three-khaki.vercel.app/) 
+[Live Demo](https://unit-converter-three-khaki.vercel.app/)
 
-## Installation 
+## Screenshots
 
-### Clone the repository 
+![main UI](./screenshots/main-ui.png)
 
-```bash 
+## Installation
+
+### Clone the repository
+
+```bash
 git clone https://github.com/vmanidev/unit-converter.git
-cd unit-converter 
+cd unit-converter
 ```
 
-## Tech stack 
+## Tech stack
 
-- HTML 
-- CSS 
-- JavaScript 
+- HTML
+- CSS
+- JavaScript
 
-## License 
+## License
 
-This project is licensed under the MIT License. See the **License** file for more details. 
+This project is licensed under the MIT License. See the **License** file for more details.
