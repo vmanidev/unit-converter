@@ -1,0 +1,58 @@
+/* default - light mode */
+
+:root {
+  --background-color: #121212;
+  --primary-color: #ff9500;
+  --secondary-color: #1c1c1e;
+  --accent-color: #a970ff;
+  --text-color: #e5e5e5;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+body main section {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin: 1em auto;
+  gap: 24px;
+}
+
+section .unit-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 10em;
+  gap: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.3 ease-in-out;
+}
+
+section .unit-thumb:hover {
+  background-color: var(--accent-color);
+}
+
+section .unit-thumb:hover :is(i, span) {
+  color: var(--text-color);
+}
+
+section .unit-thumb i {
+  font-size: 3em;
+}
+
+section .unit-thumb span {
+  font-size: 1em;
+  font-weight: bold;
+}
