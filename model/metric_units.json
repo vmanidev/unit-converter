@@ -1,0 +1,118 @@
+{
+  "length": {
+    "mm": {
+      "unit": "Millimeter",
+      "symbol": "mm",
+      "equivalent_meters": 0.001
+    },
+    "cm": {
+      "unit": "Centimeter",
+      "symbol": "cm",
+      "equivalent_meters": 0.01
+    },
+    "m": {
+      "unit": "Meter",
+      "symbol": "m",
+      "equivalent_meters": 1
+    },
+    "km": {
+      "unit": "Kilometer",
+      "symbol": "km",
+      "equivalent_meters": 1000
+    }
+  },
+  "weight": {
+    "mg": {
+      "unit": "Milligram",
+      "symbol": "mg",
+      "equivalent_grams": 0.001
+    },
+    "g": {
+      "unit": "Gram",
+      "symbol": "g",
+      "equivalent_grams": 1
+    },
+    "kg": {
+      "unit": "Kilogram",
+      "symbol": "kg",
+      "equivalent_grams": 1000
+    },
+    "t": {
+      "unit": "Metric Ton",
+      "symbol": "t",
+      "equivalent_grams": 1000000,
+      "equivalent_kilograms": 1000
+    }
+  },
+  "temperature": {
+    "c": {
+      "unit": "Celsius",
+      "symbol": "°C",
+      "equivalent_faranheit": 33.8
+    },
+    "f": {
+      "unit": "Faranheit",
+      "symbol": "°F",
+      "equivalent_celcius": "−17.22"
+    }
+  },
+  "time": {
+    "ms": {
+      "unit": "Millisecond",
+      "symbol": "ms",
+      "equivalent_seconds": 0.001
+    },
+    "s": {
+      "unit": "Second",
+      "symbol": "s",
+      "equivalent_seconds": 1
+    },
+    "min": {
+      "unit": "Minute",
+      "symbol": "min",
+      "equivalent_seconds": 60
+    },
+    "h": {
+      "unit": "Hour",
+      "symbol": "h",
+      "equivalent_minutes": 60,
+      "equivalent_seconds": 3600
+    },
+    "d": {
+      "unit": "Second",
+      "symbol": "s",
+      "equivalent_minutes": 60,
+      "equivalent_hours": 1440,
+      "equivalent_seconds": 86400
+    }
+  },
+  "speed": {
+    "m/s": {},
+    "km/h": {}
+  },
+  "area": {
+    "sq_m": {},
+    "sq_f": {},
+    "sq_km": {}
+  },
+  "volume": {
+    "cubic_ml": {},
+    "cubic_liter": {},
+    "cubic_mm": {},
+    "cubic_meter": {}
+  },
+  "energy": {
+    "J": {},
+    "kJ": {},
+    "cal": {},
+    "kcal": {},
+    "Wh": {},
+    "kWh": {}
+  },
+  "power": {
+    "W": {},
+    "kW": {},
+    "MW": {},
+    "GW": {}
+  }
+}
