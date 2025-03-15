@@ -17,14 +17,31 @@ main {
   margin: auto;
 }
 
-body main section {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-btn {
+  background: none;
+  color: var(--text-color);
+  border: none;
+  display: none;
+}
+
+#home-btn:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+body main #unit-converter-list {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   margin: 1em auto;
   gap: 24px;
 }
 
-section .unit-thumb {
+#unit-converter-list .unit-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,25 +55,30 @@ section .unit-thumb {
   transition: background-color 0.3 ease-in-out;
 }
 
-section .unit-thumb:hover {
+#unit-converter-list .unit-thumb:hover {
   background-color: var(--accent-color);
 }
 
-section .unit-thumb:hover :is(i, span) {
+#unit-converter-list .unit-thumb:hover :is(i, span) {
   color: var(--text-color);
 }
 
-section .unit-thumb i {
+#unit-converter-list .unit-thumb i {
   font-size: 3em;
 }
 
-section .unit-thumb span {
+#unit-converter-list .unit-thumb span {
   font-size: 1em;
   font-weight: bold;
 }
 
+#unit-converter-main-container {
+  display: none;
+  padding: 1rem;
+}
+
 @media (max-width: 768px) {
-  body main section {
+  body main #unit-converter-list {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
 }
