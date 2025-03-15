@@ -1,9 +1,11 @@
+import constants from "./constants.js";
+
 const init = () => {
 
     document.getElementById('app').addEventListener('click', e => openUnitConverter(e.target));
 
     const openUnitConverter = target => {
-        if (target.id === UNIT_CONVERTERS.length || target.parentElement.id === UNIT_CONVERTERS.length) {
+        if (target.id === constants.UNITS.length || target.parentElement.id === constants.UNITS.length) {
             document.getElementById('unit-converter-main-container').style.display = 'block';
             document.getElementById('unit-converter-list').style.display = 'none';
             document.getElementById('home-btn').style.display = 'block';
@@ -11,18 +13,6 @@ const init = () => {
             document.getElementById('unit-converter-list').style.display = 'grid';
         }
     }
-}
-
-const UNIT_CONVERTERS = {
-    length: 'length',
-    weight: 'weight',
-    temperature: 'temperature',
-    time: 'time',
-    speed: 'speed',
-    area: 'area',
-    volume: 'volume',
-    energy: 'energy',
-    power: 'power'
 }
 
 document.addEventListener('DOMContentLoaded', () => init());
