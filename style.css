@@ -4,6 +4,7 @@
   --secondary-color: #1c1c1e;
   --accent-color: #a970ff;
   --text-color: #e5e5e5;
+  --danger-color: #e57373;
 }
 
 body {
@@ -75,6 +76,17 @@ body main #unit-converter-list {
 #unit-converter-main-container {
   display: none;
   padding: 1rem;
+}
+
+.error {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  grid-column: 1/4;
+  padding: 0.5em;
+  border-left: 1em solid var(--danger-color);
+  border-radius: 0 0.5em 0.5em 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 768px) {

@@ -21,7 +21,12 @@ class App {
                     unitListEle.appendChild(unitEle);
                 })
             })
-            .catch(error => console.log(error));
+            .catch(error => {
+                const errorEle = document.createElement('pre');
+                errorEle.classList.add('error');
+                errorEle.textContent = error;
+                unitListEle.appendChild(errorEle);
+            });
 
     }
 
