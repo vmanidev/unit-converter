@@ -1,0 +1,47 @@
+[
+  {
+    "id": "length",
+    "name": "Length",
+    "icon": "fa-solid fa-ruler-horizontal"
+  },
+  {
+    "id": "weight",
+    "name": "Weight",
+    "icon": "fa-solid fa-weight-scale"
+  },
+  {
+    "id": "temperature",
+    "name": "Temperature",
+    "icon": "fa-solid fa-temperature-high"
+  },
+  {
+    "id": "time",
+    "name": "Time",
+    "icon": "fa-solid fa-clock"
+  },
+  {
+    "id": "speed",
+    "name": "Speed",
+    "icon": "fa-solid fa-gauge-high"
+  },
+  {
+    "id": "area",
+    "name": "Area",
+    "icon": "fa-solid fa-clone"
+  },
+  {
+    "id": "volume",
+    "name": "Volume",
+    "icon": "fa-solid fa-cubes"
+  },
+  {
+    "id": "energy",
+    "name": "Energy",
+    "icon": "fa-solid fa-bolt"
+  },
+  {
+    "id": "power",
+    "name": "Power",
+    "icon": "fa-solid fa-horse-head"
+  }
+]

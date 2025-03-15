@@ -1,3 +1,7 @@
+const URLS = {
+    unitList: './model/unit_list.json'
+}
+
 const UNITS = {
     length: 'length',
     weight: 'weight',
@@ -11,7 +15,8 @@ const UNITS = {
 }
 
 const constants = {
-    UNITS: Object.freeze(UNITS)
+    UNITS: Object.freeze(UNITS),
+    URLS: Object.freeze(URLS)
 }
 
-export default constants;
+export default Object.freeze(constants);
