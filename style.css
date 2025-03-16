@@ -107,15 +107,6 @@ body main #unit-converter-list {
   transform: rotate(90deg);
   color: var(--primary-color);
   align-self: center;
-  transition: transform 0.5s ease-in-out;
-}
-
-#unit-converter-main-container i:hover {
-  color: var(--accent-color);
-}
-
-.spin {
-  transform: rotate(270deg) !important;
 }
 
 .error {

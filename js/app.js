@@ -47,7 +47,7 @@ class App {
             const originalDropdown = this.createDropdown(metricUnits, 'original-dropdown');
             const convertDropdown = this.createDropdown(metricUnits, 'convert-dropdown');
 
-            constants.ELEMENTS.unitConverter.append(originalInput, originalDropdown, convertInput, convertDropdown);
+            constants.ELEMENTS.unitConverter.append(originalInput, originalDropdown, i, convertInput, convertDropdown);
         },
 
         createInputField(id) {
@@ -86,7 +86,7 @@ class App {
 
         getUnitConverterPageElements() {
             const convertDropdown = document.getElementById('convert-dropdown');
-            const originalDropdown = document.getElementById('original-down');
+            const originalDropdown = document.getElementById('original-dropdown');
             const originalInput = document.getElementById('original-input');
             const convertInput = document.getElementById('convert-input');
             return {
