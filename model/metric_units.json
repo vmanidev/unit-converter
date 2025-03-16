@@ -87,32 +87,98 @@
     }
   },
   "speed": {
-    "m/s": {},
-    "km/h": {}
+    "m/s": {
+      "name": "Meters per second",
+      "unit": "m/s",
+      "equivalent_km_per_hr": 3.6
+    },
+    "km/h": {
+      "name": "Kilometers per hour",
+      "unit": "km/h",
+      "equivalent_meter_per_s": 0.2778
+    }
   },
   "area": {
-    "sq_m": {},
-    "sq_f": {},
-    "sq_km": {}
+    "sq_m": {
+      "name": "Square meter",
+      "unit": "m²",
+      "equivalent_sq_meters": 1
+    },
+    "sq_f": {
+      "name": "Square kilometer",
+      "unit": "km²",
+      "equivalent_sq_meters": 1000000
+    }
   },
   "volume": {
-    "cubic_ml": {},
-    "cubic_liter": {},
-    "cubic_mm": {},
-    "cubic_meter": {}
+    "cubic_liter": {
+      "name": "Cubic liter",
+      "unit": "L",
+      "equivalent_cubic_liter": 1
+    },
+    "cubic_mm": {
+      "name": "Cubic millimeter",
+      "unit": "mm³",
+      "equivalent_cubic_liter": 0.000001
+    },
+    "cubic_meter": {
+      "name": "Cubic meter",
+      "unit": "m³",
+      "equivalent_cubic_liter": 1000
+    }
   },
   "energy": {
-    "J": {},
-    "kJ": {},
-    "cal": {},
-    "kcal": {},
-    "Wh": {},
-    "kWh": {}
+    "J": {
+      "name": "Joule",
+      "unit": "J",
+      "equivalent_cal": 0.239
+    },
+    "kJ": {
+      "name": "Kilojoule",
+      "unit": "kJ",
+      "equivalent_cal": 239
+    },
+    "cal": {
+      "name": "Calories",
+      "unit": "cal",
+      "equivalent_cal": 1
+    },
+    "kcal": {
+      "name": "Kilocalories",
+      "unit": "kcal",
+      "equivalent_cal": 1000
+    },
+    "Wh": {
+      "name": "Watt-hour",
+      "unit": "Wh",
+      "equivalent_cal": 860.42
+    },
+    "kWh": {
+      "name": "Kilowatt-hour",
+      "unit": "kWh",
+      "equivalent_cal": 860420
+    }
   },
   "power": {
-    "W": {},
-    "kW": {},
-    "MW": {},
-    "GW": {}
+    "W": {
+      "name": "Watt",
+      "unit": "W",
+      "equivalent_watt": 1
+    },
+    "kW": {
+      "name": "Kilowatt",
+      "unit": "kW",
+      "equivalent_watt": 1000
+    },
+    "MW": {
+      "name": "Megawatt",
+      "unit": "MW",
+      "equivalent_watt": 1000000
+    },
+    "GW": {
+      "name": "Gigawatt",
+      "unit": "GW",
+      "equivalent_watt": 1000000000
+    }
   }
 }
