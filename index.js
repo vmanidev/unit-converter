@@ -11,6 +11,7 @@ const init = () => {
             app.showHideUnitConverterList(true);
         } else if (constants.UNITS.some(id => id === target.id || id === target.parentElement.id)) {
             app.showHideUnitConverterList(false);
+            app.loadUnitConverterEle(target);
         }
     }
 }

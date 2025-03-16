@@ -1,5 +1,6 @@
 const URLS = {
-    unitList: './model/unit_list.json'
+    unitList: './model/unit_list.json',
+    metricUnits: './model/metric_units.json'
 }
 
 const UNITS = ['length', 'weight', 'temperature', 'time', 'speed', 'area', 'volume', 'energy', 'power'];
