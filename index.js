@@ -13,6 +13,10 @@ const init = () => {
             app.elements.showHideUnitConverterList(false);
             app.elements.loadUnitConverterEle(target);
         }
+
+        if (target.id === 'convert-icon') {
+            target.classList.toggle('spin');
+        }
     }
 }
 

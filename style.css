@@ -33,6 +33,7 @@ header {
 #home-btn:hover {
   cursor: pointer;
   color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
 }
 
 body main #unit-converter-list {
@@ -53,7 +54,7 @@ body main #unit-converter-list {
   gap: 1em;
   border-radius: 1em;
   cursor: pointer;
-  transition: background-color 0.3 ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #unit-converter-list .unit-thumb:hover {
@@ -105,10 +106,16 @@ body main #unit-converter-list {
   justify-self: center;
   transform: rotate(90deg);
   color: var(--primary-color);
+  align-self: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 #unit-converter-main-container i:hover {
   color: var(--accent-color);
+}
+
+.spin {
+  transform: rotate(270deg) !important;
 }
 
 .error {
