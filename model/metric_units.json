@@ -2,183 +2,147 @@
   "length": [
     {
       "unit": "Millimeter",
-      "symbol": "mm",
-      "equivalent_meters": 0.001
+      "symbol": "mm"
     },
     {
       "unit": "Centimeter",
-      "symbol": "cm",
-      "equivalent_meters": 0.01
+      "symbol": "cm"
     },
     {
       "unit": "Meter",
-      "symbol": "m",
-      "equivalent_meters": 1
+      "symbol": "m"
     },
     {
       "unit": "Kilometer",
-      "symbol": "km",
-      "equivalent_meters": 1000
+      "symbol": "km"
     }
   ],
   "weight": [
     {
       "unit": "Milligram",
-      "symbol": "mg",
-      "equivalent_grams": 0.001
+      "symbol": "mg"
     },
     {
       "unit": "Gram",
-      "symbol": "g",
-      "equivalent_grams": 1
+      "symbol": "g"
     },
     {
       "unit": "Kilogram",
-      "symbol": "kg",
-      "equivalent_grams": 1000
+      "symbol": "kg"
     },
     {
       "unit": "Metric Ton",
-      "symbol": "t",
-      "equivalent_grams": 1000000,
-      "equivalent_kilograms": 1000
+      "symbol": "t"
     }
   ],
   "temperature": [
     {
       "unit": "Celsius",
-      "symbol": "°C",
-      "equivalent_faranheit": 33.8
+      "symbol": "°C"
     },
     {
       "unit": "Faranheit",
-      "symbol": "°F",
-      "equivalent_celcius": "−17.22"
+      "symbol": "°F"
     }
   ],
   "time": [
     {
       "unit": "Millisecond",
-      "symbol": "ms",
-      "equivalent_seconds": 0.001
+      "symbol": "ms"
     },
     {
       "unit": "Second",
-      "symbol": "s",
-      "equivalent_seconds": 1
+      "symbol": "s"
     },
     {
       "unit": "Minute",
-      "symbol": "min",
-      "equivalent_seconds": 60
+      "symbol": "min"
     },
     {
       "unit": "Hour",
-      "symbol": "h",
-      "equivalent_minutes": 60,
-      "equivalent_seconds": 3600
+      "symbol": "h"
     },
     {
       "unit": "Second",
-      "symbol": "s",
-      "equivalent_minutes": 60,
-      "equivalent_hours": 1440,
-      "equivalent_seconds": 86400
+      "symbol": "s"
     }
   ],
   "speed": [
     {
       "unit": "Meters per second",
-      "symbol": "m/s",
-      "equivalent_km_per_hr": 3.6
+      "symbol": "m/s"
     },
     {
       "unit": "Kilometers per hour",
-      "symbol": "km/h",
-      "equivalent_meter_per_s": 0.2778
+      "symbol": "km/h"
     }
   ],
   "area": [
     {
       "unit": "Square meter",
-      "symbol": "m²",
-      "equivalent_sq_meters": 1
+      "symbol": "m²"
     },
     {
       "unit": "Square kilometer",
-      "symbol": "km²",
-      "equivalent_sq_meters": 1000000
+      "symbol": "km²"
     }
   ],
   "volume": [
     {
       "unit": "Cubic liter",
-      "symbol": "L",
-      "equivalent_cubic_liter": 1
+      "symbol": "L"
     },
     {
       "unit": "Cubic millimeter",
-      "symbol": "mm³",
-      "equivalent_cubic_liter": 0.000001
+      "symbol": "mm³"
     },
     {
       "unit": "Cubic meter",
-      "symbol": "m³",
-      "equivalent_cubic_liter": 1000
+      "symbol": "m³"
     }
   ],
   "energy": [
     {
       "unit": "Joule",
-      "symbol": "J",
-      "equivalent_cal": 0.239
+      "symbol": "J"
     },
     {
       "unit": "Kilojoule",
-      "symbol": "kJ",
-      "equivalent_cal": 239
+      "symbol": "kJ"
     },
     {
       "unit": "Calories",
-      "symbol": "cal",
-      "equivalent_cal": 1
+      "symbol": "cal"
     },
     {
       "unit": "Kilocalories",
-      "symbol": "kcal",
-      "equivalent_cal": 1000
+      "symbol": "kcal"
     },
     {
       "unit": "Watt-hour",
-      "symbol": "Wh",
-      "equivalent_cal": 860.42
+      "symbol": "Wh"
     },
     {
       "unit": "Kilowatt-hour",
-      "symbol": "kWh",
-      "equivalent_cal": 860420
+      "symbol": "kWh"
     }
   ],
   "power": [
     {
       "unit": "Watt",
-      "symbol": "W",
-      "equivalent_watt": 1
+      "symbol": "W"
     },
     {
       "unit": "Kilowatt",
-      "symbol": "kW",
-      "equivalent_watt": 1000
+      "symbol": "kW"
     },
     {
       "unit": "Megawatt",
-      "symbol": "MW",
-      "equivalent_watt": 1000000
+      "symbol": "MW"
     },
     {
       "unit": "Gigawatt",
-      "symbol": "GW",
-      "equivalent_watt": 1000000000
+      "symbol": "GW"
     }
   ]
 }
