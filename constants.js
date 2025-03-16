@@ -2,21 +2,19 @@ const URLS = {
     unitList: './model/unit_list.json'
 }
 
-const UNITS = {
-    length: 'length',
-    weight: 'weight',
-    temperature: 'temperature',
-    time: 'time',
-    speed: 'speed',
-    area: 'area',
-    volume: 'volume',
-    energy: 'energy',
-    power: 'power'
+const UNITS = ['length', 'weight', 'temperature', 'time', 'speed', 'area', 'volume', 'energy', 'power'];
+
+const ELEMENTS = {
+    app: document.getElementById('app'),
+    unitList: document.getElementById('unit-converter-list'),
+    unitConverter: document.getElementById('unit-converter-main-container'),
+    homeBtn: document.getElementById('home-btn')
 }
 
 const constants = {
     UNITS: Object.freeze(UNITS),
-    URLS: Object.freeze(URLS)
+    URLS: Object.freeze(URLS),
+    ELEMENTS: Object.freeze(ELEMENTS)
 }
 
 export default Object.freeze(constants);

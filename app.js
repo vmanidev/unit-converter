@@ -3,7 +3,6 @@ import constants from "./constants.js";
 class App {
 
     loadUnitListEle() {
-        const unitListEle = document.getElementById('unit-converter-list');
         this.getUnitListData()
             .then(units => {
                 units.forEach(unit => {
@@ -18,22 +17,30 @@ class App {
 
                     //appending unit item into unit list container
                     unitEle.append(i, span);
-                    unitListEle.appendChild(unitEle);
+                    constants.ELEMENTS.unitList.appendChild(unitEle);
                 })
             })
             .catch(error => {
                 const errorEle = document.createElement('pre');
                 errorEle.classList.add('error');
                 errorEle.textContent = error;
-                unitListEle.appendChild(errorEle);
+                constants.ELEMENTS.unitList.appendChild(errorEle);
             });
 
     }
+
+    loadUnitConverterEle(type) { }
 
     async getUnitListData() {
         const response = await fetch(constants.URLS.unitList);
         const units = await response.json();
         return units;
+    }
+
+    showHideUnitConverterList(show) {
+        constants.ELEMENTS.unitList.style.display = show ? 'grid' : 'none';
+        constants.ELEMENTS.unitConverter.style.display = show ? 'none' : 'block';
+        constants.ELEMENTS.homeBtn.style.display = show ? 'none' : 'block';
     }
 }
 
