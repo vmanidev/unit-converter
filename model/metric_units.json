@@ -1,184 +1,184 @@
 {
-  "length": {
-    "mm": {
+  "length": [
+    {
       "unit": "Millimeter",
       "symbol": "mm",
       "equivalent_meters": 0.001
     },
-    "cm": {
+    {
       "unit": "Centimeter",
       "symbol": "cm",
       "equivalent_meters": 0.01
     },
-    "m": {
+    {
       "unit": "Meter",
       "symbol": "m",
       "equivalent_meters": 1
     },
-    "km": {
+    {
       "unit": "Kilometer",
       "symbol": "km",
       "equivalent_meters": 1000
     }
-  },
-  "weight": {
-    "mg": {
+  ],
+  "weight": [
+    {
       "unit": "Milligram",
       "symbol": "mg",
       "equivalent_grams": 0.001
     },
-    "g": {
+    {
       "unit": "Gram",
       "symbol": "g",
       "equivalent_grams": 1
     },
-    "kg": {
+    {
       "unit": "Kilogram",
       "symbol": "kg",
       "equivalent_grams": 1000
     },
-    "t": {
+    {
       "unit": "Metric Ton",
       "symbol": "t",
       "equivalent_grams": 1000000,
       "equivalent_kilograms": 1000
     }
-  },
-  "temperature": {
-    "c": {
+  ],
+  "temperature": [
+    {
       "unit": "Celsius",
       "symbol": "°C",
       "equivalent_faranheit": 33.8
     },
-    "f": {
+    {
       "unit": "Faranheit",
       "symbol": "°F",
       "equivalent_celcius": "−17.22"
     }
-  },
-  "time": {
-    "ms": {
+  ],
+  "time": [
+    {
       "unit": "Millisecond",
       "symbol": "ms",
       "equivalent_seconds": 0.001
     },
-    "s": {
+    {
       "unit": "Second",
       "symbol": "s",
       "equivalent_seconds": 1
     },
-    "min": {
+    {
       "unit": "Minute",
       "symbol": "min",
       "equivalent_seconds": 60
     },
-    "h": {
+    {
       "unit": "Hour",
       "symbol": "h",
       "equivalent_minutes": 60,
       "equivalent_seconds": 3600
     },
-    "d": {
+    {
       "unit": "Second",
       "symbol": "s",
       "equivalent_minutes": 60,
       "equivalent_hours": 1440,
       "equivalent_seconds": 86400
     }
-  },
-  "speed": {
-    "m/s": {
+  ],
+  "speed": [
+    {
       "name": "Meters per second",
       "unit": "m/s",
       "equivalent_km_per_hr": 3.6
     },
-    "km/h": {
+    {
       "name": "Kilometers per hour",
       "unit": "km/h",
       "equivalent_meter_per_s": 0.2778
     }
-  },
-  "area": {
-    "sq_m": {
+  ],
+  "area": [
+    {
       "name": "Square meter",
       "unit": "m²",
       "equivalent_sq_meters": 1
     },
-    "sq_f": {
+    {
       "name": "Square kilometer",
       "unit": "km²",
       "equivalent_sq_meters": 1000000
     }
-  },
-  "volume": {
-    "cubic_liter": {
+  ],
+  "volume": [
+    {
       "name": "Cubic liter",
       "unit": "L",
       "equivalent_cubic_liter": 1
     },
-    "cubic_mm": {
+    {
       "name": "Cubic millimeter",
       "unit": "mm³",
       "equivalent_cubic_liter": 0.000001
     },
-    "cubic_meter": {
+    {
       "name": "Cubic meter",
       "unit": "m³",
       "equivalent_cubic_liter": 1000
     }
-  },
-  "energy": {
-    "J": {
+  ],
+  "energy": [
+    {
       "name": "Joule",
       "unit": "J",
       "equivalent_cal": 0.239
     },
-    "kJ": {
+    {
       "name": "Kilojoule",
       "unit": "kJ",
       "equivalent_cal": 239
     },
-    "cal": {
+    {
       "name": "Calories",
       "unit": "cal",
       "equivalent_cal": 1
     },
-    "kcal": {
+    {
       "name": "Kilocalories",
       "unit": "kcal",
       "equivalent_cal": 1000
     },
-    "Wh": {
+    {
       "name": "Watt-hour",
       "unit": "Wh",
       "equivalent_cal": 860.42
     },
-    "kWh": {
+    {
       "name": "Kilowatt-hour",
       "unit": "kWh",
       "equivalent_cal": 860420
     }
-  },
-  "power": {
-    "W": {
+  ],
+  "power": [
+    {
       "name": "Watt",
       "unit": "W",
       "equivalent_watt": 1
     },
-    "kW": {
+    {
       "name": "Kilowatt",
       "unit": "kW",
       "equivalent_watt": 1000
     },
-    "MW": {
+    {
       "name": "Megawatt",
       "unit": "MW",
       "equivalent_watt": 1000000
     },
-    "GW": {
+    {
       "name": "Gigawatt",
       "unit": "GW",
       "equivalent_watt": 1000000000
     }
-  }
+  ]
 }

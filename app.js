@@ -28,9 +28,34 @@ class App {
         const unitType = target.id ? target.id : target.parentElement.id;
         this.getMetricUnits()
             .then(metricUnits => {
-                console.log(metricUnits[unitType])
+                this.createUnitConverterEle(metricUnits[unitType]);
             })
             .catch(error => this.showErrorBanner(error, constants.ELEMENTS.unitConverter));
+    }
+
+    createUnitConverterEle(metricUnits) {
+        constants.ELEMENTS.unitConverter.innerHTML = '';
+
+        const input1 = document.createElement('input');
+        const input2 = document.createElement('input');
+
+        const i = document.createElement('i');
+        i.classList.add('fa-solid', 'fa-right-left');
+
+        const dropdownForInput1 = this.createDropdown(metricUnits);
+        const dropdownForInput2 = this.createDropdown(metricUnits);
+
+        constants.ELEMENTS.unitConverter.append(input1, dropdownForInput1, i, input2, dropdownForInput2);
+    }
+
+    createDropdown(metricUnits) {
+        const dropdown = document.createElement('select');
+        metricUnits.forEach(metricUnit => {
+            const option = document.createElement('option');
+            option.textContent = metricUnit.unit;
+            dropdown.appendChild(option);
+        });
+        return dropdown;
     }
 
     async getUnitListData() {
@@ -47,7 +72,7 @@ class App {
 
     showHideUnitConverterList(show) {
         constants.ELEMENTS.unitList.style.display = show ? 'grid' : 'none';
-        constants.ELEMENTS.unitConverter.style.display = show ? 'none' : 'block';
+        constants.ELEMENTS.unitConverter.style.display = show ? 'none' : 'grid';
         constants.ELEMENTS.homeBtn.style.display = show ? 'none' : 'block';
     }
 

@@ -75,7 +75,40 @@ body main #unit-converter-list {
 
 #unit-converter-main-container {
   display: none;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 2em;
   padding: 1rem;
+}
+
+:is(
+    #unit-converter-main-container input,
+    #unit-converter-main-container select
+  ) {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 3em;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  outline: none;
+  font-size: 1em;
+}
+
+:is(
+    #unit-converter-main-container input,
+    #unit-converter-main-container select
+  ):hover {
+  border-color: var(--accent-color);
+}
+
+#unit-converter-main-container i {
+  grid-column: 1/3;
+  justify-self: center;
+  transform: rotate(90deg);
+  color: var(--primary-color);
+}
+
+#unit-converter-main-container i:hover {
+  color: var(--accent-color);
 }
 
 .error {
