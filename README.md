@@ -14,7 +14,8 @@ A sleek and minimalistic unit converter app for quick, effortless, and accurate 
 
 ## Screenshots
 
-![main UI](./screenshots/main-ui.png)
+![home UI](./screenshots//home.png)
+![main UI](./screenshots/main.png)
 
 ## Installation
 
