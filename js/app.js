@@ -37,30 +37,34 @@ class App {
         createUnitConverterEle(metricUnits) {
             constants.ELEMENTS.unitConverter.innerHTML = '';
 
-            const input1 = this.createInputField();
-            const input2 = this.createInputField();
+            const originalInput = this.createInputField('original-input');
+            const convertInput = this.createInputField('convert-input');
 
             const i = document.createElement('i');
             i.classList.add('fa-solid', 'fa-right-left');
             i.id = 'convert-icon';
 
-            const dropdownForInput1 = this.createDropdown(metricUnits);
-            const dropdownForInput2 = this.createDropdown(metricUnits);
+            const originalDropdown = this.createDropdown(metricUnits, 'original-dropdown');
+            const convertDropdown = this.createDropdown(metricUnits, 'convert-dropdown');
 
-            constants.ELEMENTS.unitConverter.append(input1, dropdownForInput1, i, input2, dropdownForInput2);
+            constants.ELEMENTS.unitConverter.append(originalInput, originalDropdown, convertInput, convertDropdown);
         },
 
-        createInputField() {
+        createInputField(id) {
             const input = document.createElement('input');
             input.placeholder = 'Enter value to convert';
+            input.type = 'number';
+            input.id = id;
             return input;
         },
 
-        createDropdown(metricUnits) {
+        createDropdown(metricUnits, id) {
             const dropdown = document.createElement('select');
+            dropdown.id = id;
             metricUnits.forEach(metricUnit => {
                 const option = document.createElement('option');
                 option.textContent = metricUnit.unit;
+                option.value = metricUnit.symbol;
                 dropdown.appendChild(option);
             });
             return dropdown;
@@ -78,6 +82,16 @@ class App {
             errorEle.classList.add('error');
             errorEle.textContent = errorInfo;
             target.appendChild(errorEle);
+        },
+
+        getUnitConverterPageElements() {
+            const convertDropdown = document.getElementById('convert-dropdown');
+            const originalDropdown = document.getElementById('original-down');
+            const originalInput = document.getElementById('original-input');
+            const convertInput = document.getElementById('convert-input');
+            return {
+                convertDropdown, originalDropdown, originalInput, convertInput
+            }
         }
     }
 
