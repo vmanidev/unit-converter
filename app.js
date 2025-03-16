@@ -36,8 +36,8 @@ class App {
     createUnitConverterEle(metricUnits) {
         constants.ELEMENTS.unitConverter.innerHTML = '';
 
-        const input1 = document.createElement('input');
-        const input2 = document.createElement('input');
+        const input1 = this.createInputField();
+        const input2 = this.createInputField();
 
         const i = document.createElement('i');
         i.classList.add('fa-solid', 'fa-right-left');
@@ -46,6 +46,12 @@ class App {
         const dropdownForInput2 = this.createDropdown(metricUnits);
 
         constants.ELEMENTS.unitConverter.append(input1, dropdownForInput1, i, input2, dropdownForInput2);
+    }
+
+    createInputField() {
+        const input = document.createElement('input');
+        input.placeholder = 'Enter value to convert';
+        return input;
     }
 
     createDropdown(metricUnits) {
