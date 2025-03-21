@@ -61,10 +61,6 @@
     {
       "unit": "Hour",
       "symbol": "h"
-    },
-    {
-      "unit": "Second",
-      "symbol": "s"
     }
   ],
   "speed": [
@@ -89,12 +85,12 @@
   ],
   "volume": [
     {
-      "unit": "Cubic liter",
-      "symbol": "L"
+      "unit": "Cubic millimeter",
+      "symbol": "mL³"
     },
     {
-      "unit": "Cubic millimeter",
-      "symbol": "mm³"
+      "unit": "Cubic liter",
+      "symbol": "L³"
     },
     {
       "unit": "Cubic meter",
