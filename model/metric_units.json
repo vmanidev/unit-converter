@@ -129,15 +129,15 @@
       "symbol": "W"
     },
     {
-      "unit": "Kilowatt",
+      "unit": "Kilowatts",
       "symbol": "kW"
     },
     {
-      "unit": "Megawatt",
+      "unit": "Megawatts",
       "symbol": "MW"
     },
     {
-      "unit": "Gigawatt",
+      "unit": "Gigawatts",
       "symbol": "GW"
     }
   ]

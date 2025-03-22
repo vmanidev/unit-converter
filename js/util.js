@@ -26,7 +26,19 @@ class Util {
         //volume units 
         'mL³': { 'mL³': 1, 'L³': 0.000001, 'm³': 0.000000001 },
         'L³': { 'mL³': 1000000, 'L³': 1, 'm³': 0.001 },
-        'm³': { 'mL³': 1000000000, 'L³': 1000, 'm³': 1 }
+        'm³': { 'mL³': 1000000000, 'L³': 1000, 'm³': 1 },
+        //energy units
+        J: { J: 1, kJ: 0.001, cal: 0.239, kcal: 0.000239, Wh: 0.0002778, kWh: 0.0000002778 },
+        kJ: { J: 1000, kJ: 1, cal: 239, kcal: 0.239, Wh: 0.2778, kWh: 0.0002778 },
+        cal: { J: 4.184, kJ: 0.004184, cal: 1, kcal: 0.001, Wh: 0, kWh: 0 },
+        kcal: { J: 4184, kJ: 4.184, cal: 1000, kcal: 1, Wh: 0, kWh: 0 },
+        Wh: { J: 3600, kJ: 3.6, cal: 0, kcal: 9, Wh: 1, kWh: 0.001 },
+        kWh: { J: 3600000, kJ: 3600, cal: 0, kcal: 0, Wh: 1000, kWh: 1 },
+        //power units
+        W: { W: 1, kW: 0.001, MW: 0.000001, GW: 0.000000001 },
+        kW: { W: 1000, kW: 1, MW: 0.001, GW: 0.000001 },
+        MW: { W: 1000000, kW: 1000, MW: 1, GW: 0.001 },
+        GW: { W: 1000000000, kW: 1000000, MW: 1000, GW: 1 }
     }
 
     debounce(func, delay) {
@@ -50,7 +62,7 @@ class Util {
                 return value;
             }
         }
-        return (value * (this.#conversionTable[originalUnit][convertUnit] || 1)).toFixed(2);
+        return value * (this.#conversionTable[originalUnit][convertUnit] || 1);
     }
 }
 
